@@ -12,7 +12,7 @@ function reload_page()
 }
 function getdata(){
    $("#table1 tr").remove();
-    var Json= "http://www.odaa.dk/api/action/datastore_search?resource_id=2a82a145-0195-4081-a13c-b0e587e9b89c";
+    var Json= "https://www.odaa.dk/api/action/datastore_search?resource_id=2a82a145-0195-4081-a13c-b0e587e9b89c";
 $("#table1").append("<tr><th>date</th> <th> garage</th> <th>spaces</th></tr>");
     $.getJSON(Json,function (data) {
 
